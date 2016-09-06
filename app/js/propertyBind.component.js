@@ -15,7 +15,7 @@ var PropertyBindComponent = (function () {
     PropertyBindComponent = __decorate([
         core_1.Component({
             selector: 'property-bind',
-            template: "\n    <div class=\"propParent\">\n      <h1 class=\"binding\">Property Binding</h1>\n      <label>Parent Input:</label>\n      <input type=\"text\" #parentInput (click)=\"0\">\n      <prop-child [parentValue]=\"parentInput.value\"></prop-child>\n    </div>\n  "
+            template: "\n    <div class=\"propParent\">\n      <h1 class=\"binding\">Property Binding</h1>\n      <label>Parent Input:</label>\n      <input type=\"text\" #parentInput (keyup)=\"0\">\n      <prop-child [parentValue]=\"parentInput.value\"></prop-child>\n    </div>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], PropertyBindComponent);

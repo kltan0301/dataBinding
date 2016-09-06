@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
     <div class="propParent">
       <h1 class="binding">Property Binding</h1>
       <label>Parent Input:</label>
-      <input type="text" #parentInput (click)="0">
+      <input type="text" #parentInput (keyup)="0">
       <prop-child [parentValue]="parentInput.value"></prop-child>
     </div>
   `
