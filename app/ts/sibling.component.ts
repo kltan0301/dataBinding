@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'sibling-component',
   template: `
     <div class="propParent">
-      <h1 class="binding">Sibling Components</h1>
+      <h1 class="binding">Property + Event Binding</h1>
       <child (myOutput)="child1Output = $event" [siblingInput]="child2Output"></child>
       <child [siblingInput]="child1Output" (myOutput)="child2Output = $event"></child>
     </div>

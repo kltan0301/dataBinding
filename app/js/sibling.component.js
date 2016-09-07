@@ -15,7 +15,7 @@ var SiblingComponent = (function () {
     SiblingComponent = __decorate([
         core_1.Component({
             selector: 'sibling-component',
-            template: "\n    <div class=\"propParent\">\n      <h1 class=\"binding\">Sibling Components</h1>\n      <child (myOutput)=\"child1Output = $event\" [siblingInput]=\"child2Output\"></child>\n      <child [siblingInput]=\"child1Output\" (myOutput)=\"child2Output = $event\"></child>\n    </div>\n  "
+            template: "\n    <div class=\"propParent\">\n      <h1 class=\"binding\">Property + Event Binding</h1>\n      <child (myOutput)=\"child1Output = $event\" [siblingInput]=\"child2Output\"></child>\n      <child [siblingInput]=\"child1Output\" (myOutput)=\"child2Output = $event\"></child>\n    </div>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], SiblingComponent);
